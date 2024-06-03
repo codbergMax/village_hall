@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import "./sentence.css";
 
 const Sentence = () => {
-  const navigate = useNavigate();
+  const history = useHistory();
   const location = useLocation();
   const { id, name, sentence, word, wordQ } = location.state;
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,7 +11,7 @@ const Sentence = () => {
 
   const handlePrevious = () => {
     if (currentIndex === 0) {
-      navigate("/villageHall/", {
+      history.push("/villageHall/", {
         state: { id, name, sentence, word, wordQ },
       });
     }
@@ -53,14 +53,14 @@ const Sentence = () => {
               <button
                 style={{ marginRight: 10 }}
                 onClick={() => {
-                  navigate("/");
+                  history.push("/");
                 }}
               >
                 처음으로
               </button>
               <button
                 onClick={() => {
-                  navigate("/villageHall/", {
+                  history.push("/villageHall/", {
                     state: { id, name, word, index: 0, sentence, wordQ },
                   });
                 }}

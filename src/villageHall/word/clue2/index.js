@@ -1,14 +1,14 @@
-import { useNavigate, useLocation } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import "./clue2.css";
 
 const Clue2 = () => {
-  const navigate = useNavigate();
+  const history = useHistory();
   const location = useLocation();
   const { clue1, clue2, index, id, name, word, sentence, wordQ } =
     location.state;
 
   const handlePrevious = () => {
-    navigate(-1, {
+    history.push(-1, {
       state: { index, id, name, word, clue1, clue2, sentence, wordQ },
     });
   };

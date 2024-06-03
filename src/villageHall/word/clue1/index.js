@@ -1,21 +1,21 @@
-import { useNavigate, useLocation } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import "./clue1.css";
 
 const Clue1 = () => {
-  const navigate = useNavigate();
+  const history = useHistory();
   const location = useLocation();
   const { clue1, clue2, index, id, name, word, sentence, wordQ } =
     location.state;
 
   const handlePrevious = () => {
     // 이전 페이지로 이동하는 로직을 여기에 추가
-    navigate("/villageHall/word", {
+    history.push("/villageHall/word", {
       state: { id, name, word, index: index, sentence, wordQ },
     });
   };
 
   const handleNext = () => {
-    navigate("/villageHall/word/clue2", {
+    history.push("/villageHall/word/clue2", {
       state: { id, name, word, index: index, clue1, clue2, sentence, wordQ },
     });
   };

@@ -1,5 +1,5 @@
 import "./select.css";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const data = [
   {
@@ -329,10 +329,12 @@ const data = [
 ];
 
 const Select = () => {
-  const navigate = useNavigate();
+  const history = useHistory();
 
   const handleClick = (id, name, word, sentence, wordQ) => {
-    navigate("/villageHall", { state: { id, name, word, sentence, wordQ } });
+    history.push("/villageHall", {
+      state: { id, name, word, sentence, wordQ },
+    });
   };
 
   return (

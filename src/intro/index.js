@@ -1,12 +1,12 @@
 import React from "react";
 import "./intro.css";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const Intro = () => {
-  const navigate = useNavigate();
+  const history = useHistory();
 
   const handleLogoClick = () => {
-    navigate("/select");
+    history.push("/select");
   };
   return (
     <div className="logo-container">

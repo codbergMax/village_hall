@@ -1,20 +1,20 @@
 import { useEffect, useState } from "react";
 import "./villageHall.css";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 
 const VillageHall = () => {
-  const navigate = useNavigate();
+  const history = useHistory();
   const location = useLocation();
   const { id, name, word, sentence, wordQ } = location.state || {};
   const [title, setTitle] = useState("");
   const handleWordClick = () => {
-    navigate("/villageHall/word", {
+    history.push("/villageHall/word", {
       state: { id, name, word, sentence, wordQ },
     });
   };
 
   const handleSentenceClick = () => {
-    navigate("/villageHall/sentence", {
+    history.push("/villageHall/sentence", {
       state: { id, name, word, sentence, wordQ },
     });
   };
@@ -61,7 +61,7 @@ const VillageHall = () => {
         <button
           class="btn"
           onClick={() => {
-            navigate("/");
+            history.push("/");
           }}
         >
           다시 선택

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import "./word.css";
 
 const Word = () => {
-  const navigate = useNavigate();
+  const history = useHistory();
   const location = useLocation();
   const { id, name, word, sentence, index = 0, wordQ } = location.state || {};
   //   console.log("img: ", word.img[0]);
@@ -13,7 +13,7 @@ const Word = () => {
 
   const handlePrevious = () => {
     if (currentIndex === 0) {
-      navigate("/villageHall/", {
+      history.push("/villageHall/", {
         state: { id, name, word, sentence, wordQ },
       });
     }
@@ -28,7 +28,7 @@ const Word = () => {
   };
 
   const clue1 = () => {
-    navigate("/villageHall/word/clue1", {
+    history.push("/villageHall/word/clue1", {
       state: {
         clue1: word[currentIndex].clue1,
         clue2: word[currentIndex].clue2,
@@ -43,7 +43,7 @@ const Word = () => {
   };
 
   const clue2 = () => {
-    navigate("/villageHall/word/clue2", {
+    history.push("/villageHall/word/clue2", {
       state: {
         clue1: word[currentIndex].clue1,
         clue2: word[currentIndex].clue2,
@@ -77,14 +77,14 @@ const Word = () => {
               <button
                 style={{ marginRight: 10 }}
                 onClick={() => {
-                  navigate("/");
+                  history.push("/");
                 }}
               >
                 처음으로
               </button>
               <button
                 onClick={() => {
-                  navigate("/villageHall/", {
+                  history.push("/villageHall/", {
                     state: { id, name, word, index: 0, sentence, wordQ },
                   });
                 }}
