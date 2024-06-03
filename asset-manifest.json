@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/village_hall/static/css/main.362dcf06.css",
-    "main.js": "/village_hall/static/js/main.2b2a7e9b.js",
+    "main.js": "/village_hall/static/js/main.713f54de.js",
     "static/js/453.2ae38510.chunk.js": "/village_hall/static/js/453.2ae38510.chunk.js",
     "index.html": "/village_hall/index.html",
     "main.362dcf06.css.map": "/village_hall/static/css/main.362dcf06.css.map",
-    "main.2b2a7e9b.js.map": "/village_hall/static/js/main.2b2a7e9b.js.map",
+    "main.713f54de.js.map": "/village_hall/static/js/main.713f54de.js.map",
     "453.2ae38510.chunk.js.map": "/village_hall/static/js/453.2ae38510.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.362dcf06.css",
-    "static/js/main.2b2a7e9b.js"
+    "static/js/main.713f54de.js"
   ]
 }
