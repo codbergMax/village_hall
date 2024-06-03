@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pages/static/css/main.362dcf06.css",
-    "main.js": "/pages/static/js/main.be558f1b.js",
-    "static/js/453.2ae38510.chunk.js": "/pages/static/js/453.2ae38510.chunk.js",
-    "index.html": "/pages/index.html",
-    "main.362dcf06.css.map": "/pages/static/css/main.362dcf06.css.map",
-    "main.be558f1b.js.map": "/pages/static/js/main.be558f1b.js.map",
-    "453.2ae38510.chunk.js.map": "/pages/static/js/453.2ae38510.chunk.js.map"
+    "main.css": "/village_hall/pages/static/css/main.362dcf06.css",
+    "main.js": "/village_hall/pages/static/js/main.2863e84c.js",
+    "static/js/453.2ae38510.chunk.js": "/village_hall/pages/static/js/453.2ae38510.chunk.js",
+    "index.html": "/village_hall/pages/index.html",
+    "main.362dcf06.css.map": "/village_hall/pages/static/css/main.362dcf06.css.map",
+    "main.2863e84c.js.map": "/village_hall/pages/static/js/main.2863e84c.js.map",
+    "453.2ae38510.chunk.js.map": "/village_hall/pages/static/js/453.2ae38510.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.362dcf06.css",
-    "static/js/main.be558f1b.js"
+    "static/js/main.2863e84c.js"
   ]
 }
