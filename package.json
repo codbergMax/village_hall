@@ -21,7 +21,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://codbergmax.github.io/village_hall/",
+  "homepage": "https://codbergmax.github.io/village_hall/",
   "eslintConfig": {
     "extends": [
       "react-app",
