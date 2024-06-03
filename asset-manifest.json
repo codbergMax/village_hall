@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "https://codbergmax.github.io/village_hall/static/css/main.362dcf06.css",
-    "main.js": "https://codbergmax.github.io/village_hall/static/js/main.23414011.js",
+    "main.js": "https://codbergmax.github.io/village_hall/static/js/main.7981ad12.js",
     "static/js/453.2ae38510.chunk.js": "https://codbergmax.github.io/village_hall/static/js/453.2ae38510.chunk.js",
     "index.html": "https://codbergmax.github.io/village_hall/index.html",
     "main.362dcf06.css.map": "https://codbergmax.github.io/village_hall/static/css/main.362dcf06.css.map",
-    "main.23414011.js.map": "https://codbergmax.github.io/village_hall/static/js/main.23414011.js.map",
+    "main.7981ad12.js.map": "https://codbergmax.github.io/village_hall/static/js/main.7981ad12.js.map",
     "453.2ae38510.chunk.js.map": "https://codbergmax.github.io/village_hall/static/js/453.2ae38510.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.362dcf06.css",
-    "static/js/main.23414011.js"
+    "static/js/main.7981ad12.js"
   ]
 }
