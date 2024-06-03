@@ -13,6 +13,7 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Intro />} />
+        <Route path="/vilage_hall" element={<Intro />} />
         <Route path="/select" element={<Select />} />
         <Route path="/villageHall" element={<VillageHall />} />
         <Route path="/villageHall/word" element={<Word />} />

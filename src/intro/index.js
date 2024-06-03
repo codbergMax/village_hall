@@ -11,7 +11,7 @@ const Intro = () => {
   return (
     <div className="logo-container">
       <img
-        src="/img/새마을회 로고.png"
+        src={process.env.PUBLIC_URL + "/img/새마을회 로고.png"}
         alt="Logo"
         className="logo"
         onClick={handleLogoClick}
