@@ -10,7 +10,7 @@ import Clue2 from "./villageHall/word/clue2";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Intro />} />
         {/* <Route path="/vilage_hall" element={<Intro />} /> */}

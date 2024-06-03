@@ -17,6 +17,7 @@ const Intro = () => {
         onClick={handleLogoClick}
         style={{ cursor: "pointer" }}
       />
+      TEST
     </div>
   );
 };
